@@ -87,7 +87,6 @@ function onSingleTouch(event, ViewerDOM, tool, value, props, nextValueFn) {
     case TOOL_AUTO:
     case TOOL_PAN:
       event.stopPropagation();
-      event.preventDefault();
       return nextValueFn(event, ViewerDOM, tool, nextValue, props, touchPosition);
 
     default:
